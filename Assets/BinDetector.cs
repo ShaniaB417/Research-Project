@@ -7,10 +7,7 @@ public class BinDetector : MonoBehaviour
     public string binName;
     public TrialManager trialManager;
 
-
-
-    //temp test 
- void Update()
+void Update()
     {
         // TEMPORARY TEST - remove later
         if (Keyboard.current.tKey.wasPressedThisFrame)
@@ -19,7 +16,6 @@ public class BinDetector : MonoBehaviour
             Debug.Log("Manual test trigger fired on " + binName);
         }
     }
-
 
     private void OnTriggerEnter(Collider other)
     {

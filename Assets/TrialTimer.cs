@@ -63,4 +63,8 @@ public class TrialTimer : MonoBehaviour
             
         Debug.Log("Timer reset");
     }
+
+    public float GetStartTime() {
+        return startTime; 
+    }
 }

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 55362518}
   - component: {fileID: 55362517}
   - component: {fileID: 55362523}
+  - component: {fileID: 55362524}
   m_Layer: 0
   m_Name: Cube
   m_TagString: SortableObject
@@ -417,6 +418,18 @@ MonoBehaviour:
   objectName: cube
   correctBinName: 'Cube Bin '
   realism: 'warm up '
+--- !u!114 &55362524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55362516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff0f2c6930714efc950211af7e5920e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DataLogger
 --- !u!1001 &81735632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -880,6 +893,7 @@ GameObject:
   - component: {fileID: 238873012}
   - component: {fileID: 238873011}
   - component: {fileID: 238873017}
+  - component: {fileID: 238873018}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: SortableObject
@@ -1163,6 +1177,18 @@ MonoBehaviour:
   objectName: Sphere
   correctBinName: 'Sphere Bin '
   realism: 'warm up  '
+--- !u!114 &238873018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238873010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff0f2c6930714efc950211af7e5920e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DataLogger
 --- !u!1 &555238290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1724,7 @@ GameObject:
   - component: {fileID: 1267266483}
   - component: {fileID: 1267266485}
   - component: {fileID: 1267266484}
+  - component: {fileID: 1267266486}
   m_Layer: 0
   m_Name: TrialManager
   m_TagString: Untagged
@@ -1733,6 +1760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrialManager
   timer: {fileID: 562854090}
+  dataLogger: {fileID: 0}
+  participantID: P01
   totalObjects: 2
 --- !u!114 &1267266485
 MonoBehaviour:
@@ -1747,6 +1776,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrialTimer
   timerText: {fileID: 1847576931}
+--- !u!114 &1267266486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267266481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff0f2c6930714efc950211af7e5920e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DataLogger
 --- !u!1 &1348866087
 GameObject:
   m_ObjectHideFlags: 0
