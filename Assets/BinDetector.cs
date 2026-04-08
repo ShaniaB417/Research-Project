@@ -7,6 +7,10 @@ public class BinDetector : MonoBehaviour
     public string binName;
     public TrialManager trialManager;
 
+    //new 
+
+    public ObjectSpawner spawner;
+
 void Update()
     {
         // TEMPORARY TEST - remove later
@@ -28,6 +32,11 @@ void Update()
 
         trialManager.ObjectPlaced(sortable.objectName, binName, correct);
         Destroy(other.gameObject);
+
+        //new 
+        //spawn next object 
+
+        spawner.SpawnNext();
     }
 }
 
