@@ -4,7 +4,7 @@ public class TrialManager : MonoBehaviour
 {
     public TrialTimer timer;
     public DataLogger dataLogger;
-    public string participantID = "P01";
+    public string participantID = ""; //overwritten in StartScene
     public int totalObjects = 2;
 
     private int placedCount = 0;
@@ -17,6 +17,16 @@ public class TrialManager : MonoBehaviour
             timer = GetComponent<TrialTimer>();
         if (dataLogger == null)
             dataLogger = GetComponent<DataLogger>();
+    }
+
+    void Start() {
+        if(ParticipantSession.Instance != null) {
+            participantID = ParticipantSession.Instance.ParticipantID;
+            Debug.Log("Participant ID: " + participantID);
+        }
+        else {
+            Debug.LogWarning("ParticipantSession instance not found. Using default participant ID.");
+        }
     }
 
     public void ObjectSpawned(string objectName)
