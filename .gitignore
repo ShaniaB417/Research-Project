@@ -86,3 +86,5 @@ crashlytics-build.properties
 **/Debug/
 **/arm64-v8a/
 
+testitTwo_BackUpThisFolder_ButDontShipItWithYourGame/
+testit_BackUpThisFolder_ButDontShipItWithYourGame/
