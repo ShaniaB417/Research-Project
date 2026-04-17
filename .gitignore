@@ -76,3 +76,13 @@ crashlytics-build.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
 .DS_Store
+
+# Unity IL2CPP and Android build artifacts
+**/a1_BackUpThisFolder_ButDontShipItWithYourGame/
+**/BackUpThisFolder_ButDontShipItWithYourGame/
+**/il2cppOutput/
+**/tempburstlibs/
+**/.utmp/
+**/Debug/
+**/arm64-v8a/
+
