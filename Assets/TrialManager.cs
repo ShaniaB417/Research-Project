@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrialManager : MonoBehaviour
 {
@@ -49,7 +50,10 @@ public class TrialManager : MonoBehaviour
             timer.StopTimer();
             dataLogger.SaveFile();
             Debug.Log("All objects placed — trial complete");
+            SceneManager.LoadScene("Environment");
         }
+
+       
     }
 }
 

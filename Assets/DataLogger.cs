@@ -10,7 +10,8 @@ public class DataLogger : MonoBehaviour
     void Awake()
     {
         // Creates file in a place accessible on both PC and Quest
-        filePath = Path.Combine(Application.persistentDataPath, "trial_data.csv");
+       string timestamp = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+       filePath = Path.Combine(Application.persistentDataPath, $"trial_data_{timestamp}.csv"); //fix: make sure the data is not overwritteneach session 
         csvData = new StringBuilder();
 
         // Write the header row
