@@ -4,7 +4,7 @@ using System.IO;
 public class ParticipantSession : MonoBehaviour
 {
     public static ParticipantSession Instance;
-    public string ParticipantID = "DEFAULT";
+    public string ParticipantID = ""; //leave blank 
 
     void Awake()
     {
