@@ -99,3 +99,8 @@ Assets/Imported Models.meta
 Assets/Kharnyx.meta
 Assets/LowPoly - Free Tools Pack.meta
 Assets/ithappy.meta
+# TextMesh Pro Examples (not needed in repo)
+Assets/TextMesh Pro/Examples & Extras/
+
+# Prefab environment assets (if auto-generated or imported)
+# Assets/Prefab-Env/   ← uncomment if these are imported assets

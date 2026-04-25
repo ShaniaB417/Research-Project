@@ -6,14 +6,10 @@ public class BinDetector : MonoBehaviour
     [Header("Bin Settings")]
     public string binName;
     public TrialManager trialManager;
-
-    //new 
-
     public ObjectSpawner spawner;
 
-void Update()
+    void Update()
     {
-        // TEMPORARY TEST - remove later
         if (Keyboard.current.tKey.wasPressedThisFrame)
         {
             trialManager.ObjectPlaced("TestObject", binName, true);
@@ -23,20 +19,15 @@ void Update()
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Something entered " + binName + ": " + other.gameObject.name + " tag: " + other.tag);
         if (!other.CompareTag("SortableObject")) return;
-
         SortableObject sortable = other.GetComponent<SortableObject>();
         if (sortable == null) return;
-
         bool correct = (sortable.correctBinName == binName);
-
+        Debug.Log("BIN TRIGGERED: " + sortable.objectName + " entered " + binName);
         trialManager.ObjectPlaced(sortable.objectName, binName, correct);
         Destroy(other.gameObject);
-
-        //new 
-        //spawn next object 
-
-        spawner.SpawnNext();
+        if (spawner != null)
+            spawner.SpawnNext();
     }
 }
-

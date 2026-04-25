@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/My Scenes/Start.unity
     guid: f72f836ce2955421187f1b096c329545
+  - enabled: 0
+    path: Assets/My Scenes/Training.unity
+    guid: 2f47c2f86b2614159b793ed5c019827e
   - enabled: 1
     path: Assets/My Scenes/Warm UP.unity
     guid: 53d8591c89bdf4d8591b697b344679f3

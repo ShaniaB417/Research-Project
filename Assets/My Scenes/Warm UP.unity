@@ -1153,6 +1153,7 @@ MonoBehaviour:
   dataLogger: {fileID: 1267266486}
   participantID: P01
   totalObjects: 2
+  nextScene: Enviroment
 --- !u!114 &1267266485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,7 +1587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BinDetector
   binName: 'Cube Bin '
   trialManager: {fileID: 1267266484}
-  spawner: {fileID: 0}
+  spawner: {fileID: 1370735380}
 --- !u!4 &1439577568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
