@@ -7,6 +7,7 @@ public class BinDetector : MonoBehaviour
     public string binName;
     public TrialManager trialManager;
     public ObjectSpawner spawner;
+    private string lastTriggeredObject = "";
 
     void Update()
     {
@@ -19,15 +20,24 @@ public class BinDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Something entered " + binName + ": " + other.gameObject.name + " tag: " + other.tag);
         if (!other.CompareTag("SortableObject")) return;
         SortableObject sortable = other.GetComponent<SortableObject>();
         if (sortable == null) return;
+        if (sortable.objectName == lastTriggeredObject) return;
+        lastTriggeredObject = sortable.objectName;
+
         bool correct = (sortable.correctBinName == binName);
         Debug.Log("BIN TRIGGERED: " + sortable.objectName + " entered " + binName);
         trialManager.ObjectPlaced(sortable.objectName, binName, correct);
         Destroy(other.gameObject);
         if (spawner != null)
-            spawner.SpawnNext();
+            StartCoroutine(SpawnAfterDelay());
+    }
+
+    private System.Collections.IEnumerator SpawnAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        lastTriggeredObject = "";
+        spawner.SpawnNext();
     }
 }

@@ -85,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d4cb7ff856efd415db4eda8c03112e0c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1333259724785524101}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d4cb7ff856efd415db4eda8c03112e0c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1616125946370625263}
   m_SourcePrefab: {fileID: 100100000, guid: d4cb7ff856efd415db4eda8c03112e0c, type: 3}
 --- !u!1 &9007540477137117519 stripped
 GameObject:
@@ -262,3 +265,24 @@ MonoBehaviour:
   objectName: Real Apple
   correctBinName: 'Food Bin '
   realism: 'Realistic '
+--- !u!65 &1616125946370625263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007540477137117519}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1002343, y: 1.1002219, z: 1.1002508}
+  m_Center: {x: 0.0050548017, y: 0.5563276, z: 0.106237516}

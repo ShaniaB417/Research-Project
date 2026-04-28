@@ -104,3 +104,5 @@ Assets/TextMesh Pro/Examples & Extras/
 
 # Prefab environment assets (if auto-generated or imported)
 # Assets/Prefab-Env/   ← uncomment if these are imported assets
+Assets/Resources/PerformanceTest*
+Assets/Samples/
